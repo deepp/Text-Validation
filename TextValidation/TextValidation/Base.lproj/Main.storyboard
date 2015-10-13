@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9052" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9040"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TextValidation" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="center" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Broker : Abhishek" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fm7-Li-vL3">
+                                <rect key="frame" x="77" y="51" width="135" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Enter Property" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="b11-bi-jhw">
+                                <rect key="frame" x="77" y="108" width="488" height="30"/>
+                                <animations/>
+                                <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="0" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GIi-Cd-Iyb">
+                                <rect key="frame" x="77" y="137" width="488" height="31"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Agreement start date" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KYv-xM-keq">
+                                <rect key="frame" x="77" y="197" width="488" height="30"/>
+                                <animations/>
+                                <accessibility key="accessibilityConfiguration" identifier="date" label="date"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <connections>
+                                    <action selector="datepicker:" destination="BYZ-38-t0r" eventType="editingDidBegin" id="J9w-1w-n6E"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ab0-LV-Wzt">
+                                <rect key="frame" x="77" y="249" width="74" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="74" id="7sK-xP-Wcz"/>
+                                </constraints>
+                                <state key="normal" title="SUBMIT">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="submit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="C6I-bv-6as"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="0" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Rvh-8Y-U9w">
+                                <rect key="frame" x="77" y="168" width="488" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qYX-Jx-qGD">
+                                <rect key="frame" x="520" y="249" width="45" height="30"/>
+                                <animations/>
+                                <state key="normal" title="LATER">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <accessibility key="accessibilityConfiguration" label=""/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="Rvh-8Y-U9w" secondAttribute="trailing" constant="15" id="0T4-Xz-j1k"/>
+                            <constraint firstItem="Rvh-8Y-U9w" firstAttribute="top" secondItem="GIi-Cd-Iyb" secondAttribute="bottom" id="157-0C-WeU"/>
+                            <constraint firstItem="GIi-Cd-Iyb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="57" id="6ih-LN-aaP"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="KYv-xM-keq" secondAttribute="trailing" constant="15" id="6pV-EL-oef"/>
+                            <constraint firstItem="Rvh-8Y-U9w" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="57" id="HB2-Bp-1p7"/>
+                            <constraint firstItem="GIi-Cd-Iyb" firstAttribute="top" secondItem="Fm7-Li-vL3" secondAttribute="bottom" constant="65" id="KKl-gn-xok"/>
+                            <constraint firstItem="b11-bi-jhw" firstAttribute="top" secondItem="Fm7-Li-vL3" secondAttribute="bottom" constant="36" id="N6b-IJ-VE2"/>
+                            <constraint firstItem="ab0-LV-Wzt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="57" id="Tgj-YY-ma0"/>
+                            <constraint firstItem="b11-bi-jhw" firstAttribute="leading" secondItem="Fm7-Li-vL3" secondAttribute="leading" id="at4-wO-VJ7"/>
+                            <constraint firstItem="KYv-xM-keq" firstAttribute="top" secondItem="Rvh-8Y-U9w" secondAttribute="bottom" constant="-1" id="c0E-Zx-FUf"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ab0-LV-Wzt" secondAttribute="bottom" constant="321" id="cc8-sf-OHq"/>
+                            <constraint firstItem="KYv-xM-keq" firstAttribute="top" secondItem="GIi-Cd-Iyb" secondAttribute="bottom" constant="29" id="e8s-JJ-k7F"/>
+                            <constraint firstItem="KYv-xM-keq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="57" id="hUv-yG-qx8"/>
+                            <constraint firstItem="KYv-xM-keq" firstAttribute="trailing" secondItem="qYX-Jx-qGD" secondAttribute="trailing" id="i3j-E4-dEa"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="GIi-Cd-Iyb" secondAttribute="trailing" constant="15" id="iJo-uS-fNV"/>
+                            <constraint firstItem="ab0-LV-Wzt" firstAttribute="baseline" secondItem="qYX-Jx-qGD" secondAttribute="firstBaseline" id="qvn-f1-1qD"/>
+                            <constraint firstItem="b11-bi-jhw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="57" id="rsS-CM-PsG"/>
+                            <constraint firstItem="Rvh-8Y-U9w" firstAttribute="top" secondItem="b11-bi-jhw" secondAttribute="bottom" constant="30" id="rtG-j7-98V"/>
+                            <constraint firstItem="ab0-LV-Wzt" firstAttribute="top" secondItem="KYv-xM-keq" secondAttribute="bottom" constant="22" id="uhK-IB-6Ap"/>
+                            <constraint firstItem="qYX-Jx-qGD" firstAttribute="top" secondItem="Rvh-8Y-U9w" secondAttribute="bottom" constant="51" id="xen-Uo-Htj"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="b11-bi-jhw" secondAttribute="trailing" constant="15" id="ydZ-sh-4Tc"/>
+                            <constraint firstItem="GIi-Cd-Iyb" firstAttribute="top" secondItem="b11-bi-jhw" secondAttribute="bottom" constant="-1" id="zku-sc-el8"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="PropertyInput" destination="b11-bi-jhw" id="5PB-Jk-Dfe"/>
+                        <outlet property="datepicker" destination="KYv-xM-keq" id="TG0-pb-xoS"/>
+                        <outlet property="r1" destination="GIi-Cd-Iyb" id="yId-vu-mRo"/>
+                        <outlet property="r2" destination="Rvh-8Y-U9w" id="ae8-ea-WGm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="355"/>
+        </scene>
+    </scenes>
+</document>
