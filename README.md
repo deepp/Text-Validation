@@ -6,5 +6,10 @@
 4. validate mail id
 5. use date picker
 
-# 
-(https://cloud.githubusercontent.com/assets/249790/10447849/c98fc2f4-71a5-11e5-8989-8697423b5a27.png)
+#Points to learn
+1. Create project from scratch using tutorial step by step
+2. http://www.ioscreator.com/tutorials/webview-tutorial-in-ios8-with-swift
+3. Read Viewcontroller lifecycle
+4. application lifecycle
+5. basics of any screen
+6. how to implement delegate methods
