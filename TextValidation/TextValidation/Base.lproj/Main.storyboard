@@ -23,30 +23,37 @@
                                 <rect key="frame" x="77" y="51" width="135" height="21"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Enter Property" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="b11-bi-jhw">
+                            <textField opaque="NO" clipsSubviews="YES" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Enter Property" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="b11-bi-jhw" userLabel="PropertyInput">
                                 <rect key="frame" x="77" y="108" width="488" height="30"/>
                                 <animations/>
                                 <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="dAk-9M-HJe"/>
+                                </connections>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="0" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GIi-Cd-Iyb">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="0" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GIi-Cd-Iyb" userLabel="renttext">
                                 <rect key="frame" x="77" y="137" width="488" height="31"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="1Cv-Xx-f6p"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Agreement start date" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KYv-xM-keq">
                                 <rect key="frame" x="77" y="197" width="488" height="30"/>
                                 <animations/>
                                 <accessibility key="accessibilityConfiguration" identifier="date" label="date"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <textInputTraits key="textInputTraits"/>
                                 <connections>
                                     <action selector="datepicker:" destination="BYZ-38-t0r" eventType="editingDidBegin" id="J9w-1w-n6E"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Nlz-Zn-wOn"/>
                                 </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ab0-LV-Wzt">
@@ -67,6 +74,9 @@
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="hgQ-U6-QEe"/>
+                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qYX-Jx-qGD">
                                 <rect key="frame" x="520" y="249" width="45" height="30"/>
@@ -105,10 +115,10 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="PropertyInput" destination="b11-bi-jhw" id="5PB-Jk-Dfe"/>
-                        <outlet property="datepicker" destination="KYv-xM-keq" id="TG0-pb-xoS"/>
-                        <outlet property="r1" destination="GIi-Cd-Iyb" id="yId-vu-mRo"/>
-                        <outlet property="r2" destination="Rvh-8Y-U9w" id="ae8-ea-WGm"/>
+                        <outlet property="Datepicker" destination="KYv-xM-keq" id="ayQ-7b-GmM"/>
+                        <outlet property="Deposittext" destination="Rvh-8Y-U9w" id="C2W-ia-Vsl"/>
+                        <outlet property="PropertyInput" destination="b11-bi-jhw" id="HCj-ZE-n5y"/>
+                        <outlet property="renttext" destination="GIi-Cd-Iyb" id="Nj7-H5-oqB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
